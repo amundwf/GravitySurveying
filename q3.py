@@ -24,8 +24,9 @@ def fredholm_lhs(xc, xs, xq, w, K):
 		for j in range(Ns):
 			a = 0
 			for k in range(nq):
-				a += w[k] * K(xc[i], xq[k]) * lagrangePolyj(j, xq[k], xs)
+				a += w[k] * K(xc[i], xq[k]) * lagrangePolyJ(j, xq[k], xs)
 			A[(i,j)] = a
+	return A
 
 
 def lagrangePolyJ(j, x, xs):
