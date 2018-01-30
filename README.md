@@ -7,5 +7,6 @@ GravitySurveying - InVit project 1 in python
 font = {'family' : 'normal',
         'weight' : 'bold',
         'size'   : 22}
+
 matplotlib.rc('font', **font)
 ***
